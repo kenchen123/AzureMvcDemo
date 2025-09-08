@@ -1,0 +1,12 @@
+@{
+    ViewBag.Title = "My AD Groups";
+    var groups = (List<string>)ViewBag.Groups;
+}
+<h2>Hello @ViewBag.UserName</h2>
+<h3>Your Groups:</h3>
+<ul>
+@foreach (var g in groups)
+{
+    <li>@g</li>
+}
+</ul>
